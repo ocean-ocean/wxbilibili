@@ -1,0 +1,87 @@
+
+page {
+  color: #666;
+}
+/* 首页导航 */
+.nav_wrap {
+
+}
+.nav {
+  /* 不换行 */
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav_item {
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.active{
+  border-bottom: 5rpx solid #fb7299;
+}
+
+/* 轮播图 */
+.slides {
+  width: 100%;
+  height: 220rpx;
+}
+.slides swiper {
+  height: 220rpx;
+  height: 100%;
+}
+.slides image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 视频列表 */
+.video_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-between;
+}
+.video_item {
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+.video_img {
+  /* 相对定位 */
+  position: relative;
+}
+.video_img image {
+  width: 100%;
+}
+.video_img .video_info {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  font-size: 24rpx;
+}
+.video_title {
+  font-size: 28rpx;
+  /* box布局 */
+  display: -webkit-box;
+  /* 超出隐藏 */
+  overflow: hidden;
+  /* 	默认。空白会被浏览器忽略。 */
+  white-space: normal;
+  /* 显示省略符号来代表被修剪的文本。 */
+  text-overflow: ellipsis;
+  /* 在长单词或 URL 地址内部进行换行。 */
+  word-wrap: break-word;
+  /* 排列两行 */
+  -webkit-line-clamp: 2;
+  /* 垂直排列 */
+  -webkit-box-orient: vertical;
+}
+.video_wrap .play_icon::before {
+  content: "\e617";
+}
+.video_wrap .comment_icon::before {
+  content: "\e616";
+}

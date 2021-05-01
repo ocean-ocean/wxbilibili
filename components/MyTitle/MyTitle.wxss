@@ -1,0 +1,68 @@
+/* components/MyTitle/MyTitle.wxss */
+.my_title {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.logo {
+  flex: 7;
+}
+
+.search_icon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_icon {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_icon image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+
+.down_app {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down_app image {
+  width: 180rpx;
+  height: 80rpx;
+}
+
+.logo i {
+  font-size: 80rpx;
+  color: #fb7299;
+}
+
+.navbar_logo::before {
+  content: "\e614";
+}
+.search_icon i {
+  color: #ccc;
+  font-size: 50rpx;
+}
+
+.search_tab:before {
+  content: "\e615";
+}
+
+.iconfont {
+  font-family: iconfont!important;
+  font-size: 4.26667vw;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
